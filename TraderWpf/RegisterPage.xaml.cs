@@ -20,9 +20,15 @@ namespace TraderWpf
     /// </summary>
     public partial class RegisterPage : Page
     {
+        private readonly DatabaseStatements db = new DatabaseStatements();
         public RegisterPage()
         {
             InitializeComponent();
+        }
+
+        private void regButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
