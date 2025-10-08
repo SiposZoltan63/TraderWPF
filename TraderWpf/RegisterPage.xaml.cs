@@ -28,7 +28,23 @@ namespace TraderWpf
 
         private void regButton_Click(object sender, RoutedEventArgs e)
         {
+            if (userPasswordTextBox1.Password == userPasswordTextBox2.Password)
+            {
+                var user = new
+                {
+                    UserName = userNameTextBox.Text,
+                    FullName = userFullNameTextBox.Text,
+                    UserPassword = userPasswordTextBox1.Password,
+                    Salt = userPasswordTextBox2.Password,
+                    Email = userEmailTextBox.Text,
+                };
 
+                MessageBox.Show(db.AddNewUser(user).ToString());
+            }
+            else
+            {
+                MessageBox.Show("Eltérő jelszavak");
+            }
         }
     }
 }
