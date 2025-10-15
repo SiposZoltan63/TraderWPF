@@ -49,3 +49,5 @@ C:\Users\siposz\Gitwork\TraderWpf\TraderWpf\bin\Debug\System.Numerics.Vectors.xm
 C:\Users\siposz\Gitwork\TraderWpf\TraderWpf\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\siposz\Gitwork\TraderWpf\TraderWpf\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\siposz\Gitwork\TraderWpf\TraderWpf\obj\Debug\TraderWpf.csproj.Up2Date
+C:\Users\siposz\Gitwork\TraderWpf\TraderWpf\obj\Debug\LoginPage.g.cs
+C:\Users\siposz\Gitwork\TraderWpf\TraderWpf\obj\Debug\LoginPage.baml
