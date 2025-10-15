@@ -26,10 +26,7 @@ namespace TraderWpf
         {
             InitializeComponent();
             _mainWindow = mainwindow;
-            userDataGrid.ItemsSource = new object[]
-            {
-
-            };
+            userDataGrid.ItemsSource = _databaseStatements.UserList();
         }
     }
 }

@@ -51,3 +51,5 @@ C:\Users\siposz\Gitwork\TraderWpf\TraderWpf\obj\Debug\TraderWpf.csproj.Up2Date
 C:\Users\siposz\Gitwork\TraderWpf\TraderWpf\obj\Debug\LoginPage.g.cs
 C:\Users\siposz\Gitwork\TraderWpf\TraderWpf\obj\Debug\LoginPage.baml
 C:\Users\siposz\Gitwork\TraderWpf\TraderWpf\obj\Debug\TraderWpf.exe.config
+C:\Users\siposz\Gitwork\TraderWpf\TraderWpf\obj\Debug\AdminPage.g.cs
+C:\Users\siposz\Gitwork\TraderWpf\TraderWpf\obj\Debug\AdminPage.baml
