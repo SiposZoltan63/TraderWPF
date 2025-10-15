@@ -42,5 +42,25 @@ namespace TraderWpf
             }
             
         }
+        public object LoginUser(object user)
+        {
+            conn._connection.Open();
+
+            string sql = "SELECET * FROM users WHERE UseName = @username AND PASSWORD = @password";
+
+            MySqlCommand cmd = new MySqlCommand(sql, conn._connection);
+
+            var logUser = user.GetType().GetProperties();
+
+            cmd.Parameters.AddWithValue("@username", logUser[0].GetValue(user));
+            cmd.Parameters.AddWithValue("@password", logUser[1].GetValue(user));
+
+            MySqlDataReader reader = cmd.ExecuteReader();
+
+            object isRegistered = reader.Read() ? new { message = "Regisztrált" } : new { message = "Nem regisztrált" };
+
+            conn._connection.Close();
+            return isRegistered;
+        }
     }
 }
