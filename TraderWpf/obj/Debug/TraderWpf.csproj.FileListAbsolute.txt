@@ -15,7 +15,6 @@ C:\Users\siposz\Gitwork\TraderWpf\TraderWpf\obj\Debug\TraderWpf.csproj.GenerateR
 C:\Users\siposz\Gitwork\TraderWpf\TraderWpf\obj\Debug\TraderWpf.csproj.CoreCompileInputs.cache
 C:\Users\siposz\Gitwork\TraderWpf\TraderWpf\obj\Debug\TraderWpf.exe
 C:\Users\siposz\Gitwork\TraderWpf\TraderWpf\obj\Debug\TraderWpf.pdb
-C:\Users\siposz\Gitwork\TraderWpf\TraderWpf\obj\Debug\TraderWpf.exe.config
 C:\Users\siposz\Gitwork\TraderWpf\TraderWpf\bin\Debug\BouncyCastle.Cryptography.dll
 C:\Users\siposz\Gitwork\TraderWpf\TraderWpf\bin\Debug\Google.Protobuf.dll
 C:\Users\siposz\Gitwork\TraderWpf\TraderWpf\bin\Debug\K4os.Compression.LZ4.dll
@@ -51,3 +50,4 @@ C:\Users\siposz\Gitwork\TraderWpf\TraderWpf\bin\Debug\System.Threading.Tasks.Ext
 C:\Users\siposz\Gitwork\TraderWpf\TraderWpf\obj\Debug\TraderWpf.csproj.Up2Date
 C:\Users\siposz\Gitwork\TraderWpf\TraderWpf\obj\Debug\LoginPage.g.cs
 C:\Users\siposz\Gitwork\TraderWpf\TraderWpf\obj\Debug\LoginPage.baml
+C:\Users\siposz\Gitwork\TraderWpf\TraderWpf\obj\Debug\TraderWpf.exe.config

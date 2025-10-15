@@ -20,10 +20,12 @@ namespace TraderWpf
     /// </summary>
     public partial class RegisterPage : Page
     {
-        private readonly DatabaseStatements db = new DatabaseStatements();
-        public RegisterPage()
+        private readonly DatabaseStatements _databaseStatements = new DatabaseStatements();
+        private readonly MainWindow _mainWindow;
+        public RegisterPage(MainWindow mainWindow)
         {
             InitializeComponent();
+            _mainWindow = mainWindow;
         }
 
         private void regButton_Click(object sender, RoutedEventArgs e)
@@ -39,7 +41,8 @@ namespace TraderWpf
                     Email = userEmailTextBox.Text,
                 };
 
-                MessageBox.Show(db.AddNewUser(user).ToString());
+                MessageBox.Show(_databaseStatements.AddNewUser(user).ToString());
+                _mainWindow.StartWindow.Navigate(new LoginPage(_mainWindow));
             }
             else
             {

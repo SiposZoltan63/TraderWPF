@@ -29,6 +29,9 @@
         <TextBox x:Name="userNameTextBox" FontSize="15" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Grid.Row="0" Grid.Column="1" Padding="5"/>
         <PasswordBox x:Name="userPasswordTextBox1" Grid.Row="1" Grid.Column="1"/>
         <StackPanel Grid.Row="5" Grid.Column="1" HorizontalAlignment="Right">
+            <TextBlock Margin="5">
+                <Hyperlink x:Name="regLink" FontWeight="Bold" Click="regLink_Click" FontSize="15" Foreground="Yellow">Regisztrálok</Hyperlink>
+            </TextBlock>
             <Button x:Name="logButton" Content="Belépés" FontSize="20" Foreground="White" Background="Blue" Width="150" Height="50" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="logButton_Click"/>
         </StackPanel>
     </Grid>

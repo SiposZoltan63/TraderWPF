@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
@@ -46,7 +47,7 @@ namespace TraderWpf
         {
             conn._connection.Open();
 
-            string sql = "SELECET * FROM users WHERE UseName = @username AND PASSWORD = @password";
+            string sql = "SELECT * FROM users WHERE UserName = @username AND PASSWORD = @password";
 
             MySqlCommand cmd = new MySqlCommand(sql, conn._connection);
 
@@ -61,6 +62,23 @@ namespace TraderWpf
 
             conn._connection.Close();
             return isRegistered;
+        }
+        public DataView UserList()
+        {
+            conn._connection.Open();
+            string sql = "SELECT * FROM users";
+
+            MySqlCommand cmd = new MySqlCommand(sql, conn._connection);
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+
+            DataTable dt = new DataTable();
+
+            adapter.Fill(dt);
+
+            conn._connection.Close();
+
+            return dt.DefaultView;
         }
     }
 }
